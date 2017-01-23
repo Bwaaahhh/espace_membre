@@ -26,12 +26,12 @@
         <main>
             <p>S'inscrire :</p>
             <form>
-                <input type="text" name="" value="">
-                <input type="text" name="" value="">
-                <input type="text" name="" value="">
-                <input type="text" name="" value="">
-                <input type="password" name="" value="">
-                <input type="password" name="" value="">
+                <input type="text" name="surname" value="">
+                <input type="text" name="name" value="">
+                <input type="text" name="nickname" value="">
+                <input type="text" name="email" value="">
+                <input type="password" name="password" value="">
+                <input type="password" name="repassword" value="">
                 <button class="button primary" type="submit">S'inscrire</button>
             </form>
         </main>
