@@ -1,13 +1,14 @@
+<?php include "php/membre.php" ?>
 <body>
 	<header>
 		<div class="row">
 			<div class="small-8 large-2 columns">
-				<img src="..."/>
+				<img src="images/logo.png"/>
 			</div>
-			<div class="small-8 large-2 columns">
+			<div class="small-8 large-2 large-offset-3 columns">
 				<h1>Velkroala</h1>
 			</div>
-			<div class="small-8 large-2 columns">
+			<div class="small-8 large-2 large-offset-3 columns">
 				<p>Bonjour ...</p>
 			</div>
 		</div>
@@ -29,9 +30,12 @@
 			</div>
 			<div class="small-8 large-4 columns">
 				<p>Rechercher un membre</p>
-				<form>
-					<input type="text"></input>
+				<form name="member_testing" action='php/membre.php' method="post">
+					<input type="text">Pseudo</input>
 					<input type="submit"></input>
+				</form>
+				<form name="member_finding" action='php/membre.php' method="post">
+					<button type="button"><?=</button>
 				</form>
 			</div>
 		</div>
