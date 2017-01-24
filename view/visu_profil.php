@@ -27,21 +27,20 @@
                 <label name="nom_profil">Nom : <?=$obj->nom?></label>
                 <label name="prenom_profil">Prenom : <?=$obj->prenom?></label>
             </div>
-            <div class="small-12 large-4 large-offset-1 columns">
-                <form name="member_testing" action='controller/php/test_membre.php' method="post">
-					<input type="text" value="">Pseudo</input>
-					<input type="submit"></input>
+            <div class="small-8 large-4 columns">
+				<p>Rechercher un membre</p>
+				<form name="member_testing" action='' method="post">
+					<input type="text" name="un_membre" value="">
+					<input type="submit">
 				</form>
-				<form name="member_find" action='php/visu_profil.php' method="post">
+				<?php if(isset($_POST["un_membre"])){ ?>
+				<form name="member_find" action='visu_profil.php' method="post">
 					<?php foreach($result as $each){ ?>
-						<?php if($true_member == true){ ?>
-							<input type="submit" name="<?= $member ?>">
-						<?php } else{ ?>
-							 <p>Aucun Koala ne se nomme ainsi.</p>
-						<?php } ?>
+						<a href="index.php?page=visu_profil"><?=$member?></a>
 					<?php } ?>
 				</form>
-            </div>
+				<?php } ?>
+			</div>
         </div>
         <div class="row">
             <div class="small-12">
