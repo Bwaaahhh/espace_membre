@@ -29,7 +29,7 @@ include 'PDO.php';
   }
 
   if(empty($errors)){
-    $req = $dbh->prepare("INSERT INTO utilisateur SET nom = ?, prenom = ?, pseudo = ?, mail = ?, password = ? ");
+    $req = $dbh->prepare("INSERT INTO utilisateur SET nom = ?, prenom = ?, pseudo = ?,  password = ?, mail = ? ");
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $req->execute([$_POST['surname'], $_POST['name'], $_POST['nickname'], $password, $_POST['email']]);
     die('compte crée');
