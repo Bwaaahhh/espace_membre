@@ -1,4 +1,4 @@
-<?php include "../controller/php/test_membre.php" ?>
+<?php include "controller/php/test_membre.php" ?>
 <body>
 	<header>
 		<div class="row">
@@ -35,11 +35,13 @@
 					<input type="submit"></input>
 				</form>
 				<form name="member_find" action='php/visu_profil.php' method="post">
-					<?php foreach($result as $each){ ?>
-						<?php if($true_member == true){ ?>
-							<input type="submit" name="<?= $member ?>">
-						<?php } else{ ?>
-							 <p>Aucun Koala ne se nomme ainsi.</p>
+					<?php if(isset($_POST["member_testing"])){ ?>
+						<?php foreach($result as $each){ ?>
+							<?php if($true_member == true){ ?>
+								<input type="submit" name="<?= $member ?>">
+							<?php } else{ ?>
+								 <p>Aucun Koala ne se nomme ainsi.</p>
+							<?php } ?>
 						<?php } ?>
 					<?php } ?>
 				</form>
