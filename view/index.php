@@ -21,7 +21,7 @@
                     <button class="button alert" onclick="subs()">S'inscrire :</button>
                 </div>
             </div>
-            <form id="subscribe" class="invisible" action="/controller/php/requete_inscription.php" method="post">
+            <form id="subscribe" class="invisible" action="controller/php/requete_inscription.php" method="post">
                 <div class="row">
                     <div class="small-3 column">
                         <label for="right-label" class="text-right middle">Votre nom :</label>
