@@ -1,4 +1,24 @@
 header {
     text-align: center ;
     background-color: #F05D3B ;
+    padding-top: 2%;
+}
+main {
+    background-color: #FA8654 ;
+    padding-top: 4%;
+}
+main form label input {
+    display : inline-block;
+}
+main form label {
+    display: inline-block;
+}
+main #subscribe {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+footer {
+    background-color: #F05D3B ;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }

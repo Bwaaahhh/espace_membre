@@ -28,20 +28,64 @@
             <div class="row">
                 <p>S'inscrire :</p>
                 <form id="subscribe">
-                    <input type="text" name="surname" value="">
-                    <input type="text" name="name" value="">
-                    <input type="text" name="nickname" value="">
-                    <input type="text" name="email" value="">
-                    <input type="password" name="password" value="">
-                    <input type="password" name="repassword" value="">
-                    <button class="button primary" type="submit">S'inscrire</button>
+                    <div class="row">
+                        <div class="small-3 column">
+                            <label for="right-label" class="text-right middle">Votre nom :</label>
+                        </div>
+                        <div class="small-4 columns end">
+                            <input type="text" name="surname" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="right-label" class="text-right middle">Votre prénom :</label>
+                        </div>
+                        <div class="small-4 columns end ">
+                            <input type="text" name="name" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="right-label" class="text-right middle">Votre pseudo :</label>
+                        </div>
+                        <div class="small-4 columns end">
+                            <input type="text" name="nickname" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="right-label" class="text-right middle">Votre e-mail :</label>
+                        </div>
+                        <div class="small-4 columns end">
+                            <input type="text" name="email" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="right-label" class="text-right middle">Votre mot de passe :</label>
+                        </div>
+                        <div class="small-4 columns end">
+                            <input type="password" name="password" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="right-label" class="text-right">Retaper votre mot de passe :</label>
+                        </div>
+                        <div class="small-4 columns end">
+                            <input type="password" name="repassword" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="button primary small-4 large-2 columns end" type="submit">S'inscrire</button>
+                    </div>
                 </form>
             </div>
         </main>
 
         <footer>
             <div class="row">
-                <i class="fa fa-facebook-official fa-3x small-2 small-offset-1 " aria-hidden="true"></i>
+                <i class="fa fa-facebook-official fa-3x small-2 small-offset-3 " aria-hidden="true"></i>
                 <i class="fa fa-twitter fa-3x small-2 small-offset-1" aria-hidden="true"></i>
                 <i class="fa fa-github fa-3x small-2 small-offset-1" aria-hidden="true"></i>
             </div>
