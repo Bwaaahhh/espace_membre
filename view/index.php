@@ -21,7 +21,7 @@
                     <button class="button alert" onclick="subs()">S'inscrire :</button>
                 </div>
             </div>
-            <form id="subscribe" class="invisible">
+            <form id="subscribe" class="invisible" action="controller/php/requete_inscription.php" method="post">
                 <div class="row">
                     <div class="small-3 column">
                         <label for="right-label" class="text-right middle">Votre nom :</label>
@@ -67,7 +67,7 @@
                         <label for="right-label" class="text-right">Retaper votre mot de passe :</label>
                     </div>
                     <div class="small-4 columns end">
-                        <input type="password" name="repassword" value="">
+                        <input type="password" name="reconfirm" value="">
                     </div>
                 </div>
                 <div class="row">
