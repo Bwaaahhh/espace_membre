@@ -1,7 +1,7 @@
 <?php
 	// request to search pseudo
-	$query = $dbh->query("SELECT utilisateur.pseudo FROM utilistaeur whetre nom like ");
-	$result =$query->fetchall();
 	$member = $_POST("member_testing");
+	$query = $dbh->query("SELECT utilisateur.pseudo FROM utilisateur WHERE pseudo LIKE ".$member."");
+	$result =$query->fetchall();
 	$true_member = in_array($member, $result);
 ?>

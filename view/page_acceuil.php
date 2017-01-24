@@ -39,7 +39,7 @@
 						<?php if($true_member == true){ ?> 
 							<input type="submit" name="<?= $member; ?>">
 						<?php } else{ ?>
-							<?= <p>Aucun Koala ne se nomme ainsi.</p> ?>
+							 <p>Aucun Koala ne se nomme ainsi.</p> 
 						<?php } ?>
 					<?php } ?>
 				</form>
