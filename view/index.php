@@ -21,7 +21,7 @@
                     <button class="button alert" onclick="subs()">S'inscrire :</button>
                 </div>
             </div>
-            <form id="subscribe" class="invisible">
+            <form id="subscribe" class="invisible" action="">
                 <div class="row">
                     <div class="small-3 column">
                         <label for="right-label" class="text-right middle">Votre nom :</label>

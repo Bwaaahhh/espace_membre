@@ -1,21 +1,22 @@
 <?php
 
 if (!empty($_POST)) {
-
-  include 'PDO.php'
+include 'functions.php';
+include 'PDO.php';
 
   $errors = array();
 
-  if (empty($_POST['surname']) || !preg_match('[^"]+', $_POST['surname'] )) {
+  if (empty($_POST['surname']) || !preg_match('/^[a-zA-Z-0-9_]+$/', $_POST['surname'] )) {
     $errors['surname'] = "Le nom n'est pas valide ";
+
   }
 
-  if (empty($_POST['name']) || !preg_match('[^"]+', $_POST['name'] )) {
+  if (empty($_POST['name']) || !preg_match('/^[a-zA-Z-0-9_]+$/', $_POST['name'] )) {
     $errors['name'] = "Le prénom n'est pas valide ";
   }
 
-  if (empty($_POST['pseudo']) || !preg_match('[^"]+', $_POST['pseudo'] )) {
-    $errors['pseudo'] = "le pseudo n'est pas valide";
+  if (empty($_POST['nickname']) || !preg_match('/^[a-z\d_]{2,20}$/i', $_POST['nickname'] )) {
+    $errors['nickname'] = "le pseudo n'est pas valide";
   }
 
   if (empty($_POST['email']) || !filter_var($_POST['email'] )) {
@@ -23,13 +24,16 @@ if (!empty($_POST)) {
     $errors['email'] = "L'adresse électronique n'est pas valide ";
   }
 
-  if (empty($_POST['password']) || $_POST['password'] != $_POST['reconfirm'] )) {
+  if (empty($_POST['password']) || $_POST['password'] != $_POST['reconfirm'] ) {
     $errors['password'] = "Le mot de passe n'est pas valide ";
   }
 
-  $req = $dbh->prepare("INSERT INTO utilisateur SET nom = ?, prenom = ?, pseudo = ?, mail = ?, password = ? ")
-  $password = password_hash($_POST['password']), PASSWORD_BCRYPT);
-  $req->execute(['username']), $password, $_POST['email']]);
-  die('compte crée')
+  if(empty($errors)){
+    $req = $dbh->prepare("INSERT INTO utilisateur SET nom = ?, prenom = ?, pseudo = ?, mail = ?, password = ? ");
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    $req->execute([$_POST['surname'], $_POST['name'], $_POST['nickname'], $password, $_POST['email']]);
+    die('compte crée');
+  }
 
+debug($errors);
 }
