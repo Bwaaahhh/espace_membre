@@ -52,7 +52,7 @@
                     </div>
                     <div class="row">
                         <div class="small-3 columns">
-                            <label for="right-label" class="text-right middle">Votre pseudo :</label>
+                            <label for="right-label" name="pseudo" class="text-right middle">Votre pseudo :</label>
                         </div>
                         <div class="small-4 columns end">
                             <input type="text" name="nickname" value="">

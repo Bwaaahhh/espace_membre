@@ -2,6 +2,8 @@
 
 if (!empty($_POST)) {
 
+  include 'PDO.php'
+
   $errors = array();
 
   if (empty($_POST['surname']) || !preg_match('[^"]+', $_POST['surname'] )) {
@@ -10,6 +12,10 @@ if (!empty($_POST)) {
 
   if (empty($_POST['name']) || !preg_match('[^"]+', $_POST['name'] )) {
     $errors['name'] = "Le prénom n'est pas valide ";
+  }
+
+  if (empty($_POST['surname']) || !preg_match('[^"]+', $_POST['surname'] )) {
+    $errors['surname'] = "Le nom n'est pas valide ";
   }
 
   if (empty($_POST['email']) || !filter_var($_POST['email'] )) {
@@ -21,7 +27,9 @@ if (!empty($_POST)) {
     $errors['password'] = "Le mot de passe n'est pas valide ";
   }
 
-  include 'PDO.php'
-  $pdo = "INSERT INTO utilisateur SET nom = ?, prenom = ?, pseudo = ?, mail = ?, password = ? "
+  $req = $dbh->prepare("INSERT INTO utilisateur SET nom = ?, prenom = ?, pseudo = ?, mail = ?, password = ? ")
+  $password = password_hash($_POST['password']), PASSWORD_BCRYPT);
+  $req->execute(['username']), $password, $_POST['email']]);
+  die('compte crée')
 
 }
