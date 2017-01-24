@@ -34,7 +34,7 @@
 					<input type="text">Pseudo</input>
 					<input type="submit"></input>
 				</form>
-				<form name="member_finding" action='php/membre.php' method="post">
+				<form name="member_finding" action='php/visu_profil.php' method="post">
 					<?php foreach($result as $each){ ?>
 						<?php if($true_member == true){ ?> 
 							<button type="button"><?php echo $member; ?></button>
