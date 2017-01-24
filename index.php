@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="view/css/style.css"  />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="view/js/js.js"></script>
     </head>
     <body>
         <header>
@@ -29,9 +30,8 @@
             <div class="row">
                 <div class="row">
                     <div class="small-2 small-centered columns">
-                        <button class="button alert">S'inscrire :</button>
+                        <button class="button alert" onclick="subs()">S'inscrire :</button>
                     </div>
-
                 </div>
                 <form id="subscribe" class="invisible">
                     <div class="row">
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <button class="button primary small-4 large-2 columns end" type="submit">S'inscrire</button>
+                        <button class="button primary small-4 large-2 columns end" type="submit">Envoyer</button>
                     </div>
                 </form>
             </div>
