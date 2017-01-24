@@ -1,4 +1,4 @@
-<?php include "php/membre.php" ?>
+<?php include "php/test_membre.php" ?>
 <body>
 	<header>
 		<div class="row">
@@ -30,7 +30,7 @@
 			</div>
 			<div class="small-8 large-4 columns">
 				<p>Rechercher un membre</p>
-				<form name="member_testing" action='php/membre.php' method="post">
+				<form name="member_testing" action='php/test_membre.php' method="post">
 					<input type="text">Pseudo</input>
 					<input type="submit"></input>
 				</form>
