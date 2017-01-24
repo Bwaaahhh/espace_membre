@@ -26,7 +26,7 @@
 		</div>
 		<div class="row">
 			<div class="small-10 large-5 columns">
-				<img alt="Gros bouton de modification de profil"/>
+				<a href="php/modif_profil.php"><img alt="Gros bouton de modification de profil"/></a>
 			</div>
 			<div class="small-8 large-4 columns">
 				<p>Rechercher un membre</p>
@@ -34,23 +34,16 @@
 					<input type="text" value>Pseudo</input>
 					<input type="submit"></input>
 				</form>
-				<form name="member_finding" action='php/visu_profil.php' method="post">
+				<form name="member_find" action='php/visu_profil.php' method="post">
 					<?php foreach($result as $each){ ?>
 						<?php if($true_member == true){ ?> 
 							<input type="submit" name="<?= $member; ?>">
 						<?php } else{ ?>
-							<?= <p>Aucun Koala ne se nomme ainsi</p> ?>
+							<?= <p>Aucun Koala ne se nomme ainsi.</p> ?>
 						<?php } ?>
 					<?php } ?>
 				</form>
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="small-8 large-4 columns">
-			<img src="..." alt="logo-facebook"/>
-			<img src="..." alt="logo-twitter"/>
-			<img src="..." alt="logo-github"/>
-		</div>
-	</footer>
 </body>
