@@ -31,13 +31,15 @@
 			<div class="small-8 large-4 columns">
 				<p>Rechercher un membre</p>
 				<form name="member_testing" action='php/test_membre.php' method="post">
-					<input type="text">Pseudo</input>
+					<input type="text" value>Pseudo</input>
 					<input type="submit"></input>
 				</form>
 				<form name="member_finding" action='php/visu_profil.php' method="post">
 					<?php foreach($result as $each){ ?>
 						<?php if($true_member == true){ ?> 
-							<button type="button"><?php echo $member; ?></button>
+							<input type="submit" name="<?= $member; ?>">
+						<?php } else{ ?>
+							<?= <p>Aucun Koala ne se nomme ainsi</p> ?>
 						<?php } ?>
 					<?php } ?>
 				</form>
