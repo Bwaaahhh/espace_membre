@@ -1,4 +1,5 @@
-<?php include "controller/php/test_membre.php" ?>
+<?php include "controller/php/test_membre.php" ;
+      include "controller/php/requete_affichage.php" ?>
 <body>
 	<header>
 		<div class="row">
@@ -18,12 +19,13 @@
             <?php foreach ($res as $obj):?>
 
             <div class="small-12 large-2 columns">
+
                 <img src="<?=$obj->url_image?>" alt="Image représentant l'avatar du profil">
             </div>
             <div class="small-12 large-4 large-offset-1 columns">
-                <label name="pseudo_profil"><?=$obj->pseudo?></label>
-                <label name="nom_profil"><?=$obj->nom?></label>
-                <label name="prenom_profil"><?=$obj->prenom?></label>
+                <label name="pseudo_profil">Pseudo : <?=$obj->pseudo?></label>
+                <label name="nom_profil">Nom : <?=$obj->nom?></label>
+                <label name="prenom_profil">Prenom : <?=$obj->prenom?></label>
             </div>
             <div class="small-12 large-4 large-offset-1 columns">
                 <form name="member_testing" action='controller/php/test_membre.php' method="post">
@@ -43,6 +45,7 @@
         </div>
         <div class="row">
             <div class="small-12">
+                <p>Description :</p>
                 <?=$obj->description?>
             </div>
         </div>
