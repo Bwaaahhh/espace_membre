@@ -35,7 +35,11 @@
 					<input type="submit"></input>
 				</form>
 				<form name="member_finding" action='php/membre.php' method="post">
-					<button type="button"><?=</button>
+					<?php foreach($result as $each){ ?>
+						<?php if($true_member == true){ ?> 
+							<button type="button"><?php echo $member; ?></button>
+						<?php } ?>
+					<?php } ?>
 				</form>
 			</div>
 		</div>
