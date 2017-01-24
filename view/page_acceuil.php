@@ -1,4 +1,4 @@
-<?php include "../controller/php/test_membre.php" ?>
+<?php include "controller/php/test_membre.php" ?>
 <body>
 	<header>
 		<div class="row">
