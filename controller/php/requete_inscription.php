@@ -14,8 +14,8 @@ if (!empty($_POST)) {
     $errors['name'] = "Le prénom n'est pas valide ";
   }
 
-  if (empty($_POST['surname']) || !preg_match('[^"]+', $_POST['surname'] )) {
-    $errors['surname'] = "Le nom n'est pas valide ";
+  if (empty($_POST['pseudo']) || !preg_match('[^"]+', $_POST['pseudo'] )) {
+    $errors['pseudo'] = "le pseudo n'est pas valide";
   }
 
   if (empty($_POST['email']) || !filter_var($_POST['email'] )) {
