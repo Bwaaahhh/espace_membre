@@ -1,3 +1,4 @@
+<?php include 'controller/php/requete_modif.php'; ?>
 <body>
 	<header>
 		<div class="row">
@@ -18,7 +19,7 @@
                 <h2>Si tu veux modifier ton profil tu es au bon endroit petit Koala</h2>
             </div>
         </div>
-        <form class="" action="../controller/php/requete_modif.php" method="post">
+        <form class="" name="modifier" action="" method="post">
             <div class="row">
                 <div class="small-12 large-3 large-offset-1 columns">
                     <img src="" alt="">
@@ -41,7 +42,7 @@
             </div>
             <div class="row">
                 <div class="small-4 large-2 large-centered columns">
-                    <button class="success button" name="modifier" type="submit">Modifier</button>
+                    <button class="success button" type="submit">Modifier</button>
                 </div>
             </div>
         </form>
