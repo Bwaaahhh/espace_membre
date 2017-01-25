@@ -1,22 +1,44 @@
 <?php
-include("PDO.php");
-$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-// Vérification des identifiants
-$req = $bdd->prepare('SELECT id FROM utilisateur WHERE pseudo = :pseudo AND password = :pass');
-$req->execute(array(
-    'pseudo' => $pseudo,
-    'pass' => $password));
 
-$resultat = $req->fetch();
+if(isset($_POST['login_submit'])){
+  include "functions.php";
+	$errors = array();
 
-if (!$resultat)
-{
-    echo 'Mauvais identifiant ou mot de passe !';
-}
-else
-{
-    session_start();
-    $_SESSION['id'] = $resultat['id'];
-    $_SESSION['pseudo'] = $pseudo;
-    echo 'Vous êtes connecté !';
+
+	//Basic validation
+	if(empty($_POST['identification'])){
+		$errors[] = "entrer un pseudo";
+    echo "entrer un pseudo";
+	}
+  else{
+		$username = $_POST['identification'];
+    echo $username;
+	}
+
+	if(empty($_POST['passwordid'])){
+		$errors[] = "entrer votre mdp";
+    echo "entrer un mdp";
+	}
+  else{
+		$password = $_POST['passwordid'];
+    echo $password;
+	}
+
+	if (empty($errors)) {
+		$sql = "SELECT ID_utilisateur FROM utilisateur WHERE pseudo = '$username'";
+    debug($sql);
+		$result = $dbh->query($sql);
+		if ($result->num_rows === 1) {
+			$row = $result->fetch_array(MYSQLI_ASSOC);
+			if (password_verify($password, $row['passwordid'])) {
+				//Password matches, so create the session
+				$_SESSION['user']['user_id'] = $row['user_id'];
+				// header("Location:/members");
+			}else{
+				$errors[] = "The username or password do not match";
+			}
+		}else{
+			$errors[] = "The username or password do not match";
+		}
+	}
 }
