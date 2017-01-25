@@ -15,8 +15,8 @@
 	</header>
 	<main>
         <div class="row">
-            <div class="small-12 small-centered columns">
-                <h2>Si tu veux modifier ton profil tu es au bon endroit petit Koala</h2>
+            <div class="small-12 small-centered large-centered columns  ">
+                <p class="titre_modif">Si tu veux modifier ton profil tu es au bon endroit petit Koala</p>
             </div>
         </div>
         <form class="" name="modifier" action="" method="post">

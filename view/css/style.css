@@ -28,6 +28,9 @@ main #subscribe {
     padding-top: 4%;
     padding-bottom: 4%;
 }
+main .titre_modif {
+    font-weight: bold ; 
+}
 
 
 /*    -----------------------------    FOOTER        ------------------------------   */

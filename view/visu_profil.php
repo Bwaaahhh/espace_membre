@@ -23,7 +23,7 @@
                     <?php echo "Cet utilisateur n'a pas encore d'image de profil" ?>
                 <?php }else{ ?>
                     <img src="<?=$obj->url_image?>" alt="Image représentant l'avatar du profil">
-                <?php } ?> 
+                <?php } ?>
             </div>
             <div class="small-12 large-4 large-offset-1 columns">
                 <label name="pseudo_profil">Pseudo : <?=$obj->pseudo?></label>
