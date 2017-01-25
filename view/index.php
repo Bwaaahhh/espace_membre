@@ -6,7 +6,7 @@
                 <h1>Velkroala :</h1>
                 <p>Vous ne pourrez jamais en décrocher</p>
             </div>
-            <form class="" action="login.php" method="post">
+            <form class="" action="controller/php/login.php" method="post">
             <div id="login" class="small-5 small-offset-3 large-3 large-offset-2 column end">
                 <input type="text" name="identification" placeholder="Identifiant"/>
                 <input type="password" password="passwordid" placeholder="Mot de passe"  />
