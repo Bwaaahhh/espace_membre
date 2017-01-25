@@ -7,11 +7,11 @@
                 <p>Vous ne pourrez jamais en décrocher</p>
             </div>
             <form class="" action="controller/php/login.php" method="post">
-            <div id="login" class="small-5 small-offset-3 large-3 large-offset-2 column end">
-                <input type="text" name="identification" placeholder="Identifiant"/>
-                <input type="password" password="passwordid" placeholder="Mot de passe"  />
-                <button class="button success" type="submit">Zou!</button>
-            </div>
+                <div id="login" class="small-5 small-offset-3 large-3 large-offset-2 column end">
+                    <input type="text" name="identification" placeholder="Identifiant"/>
+                    <input type="password" name="passwordid" placeholder="Mot de passe"  />
+                    <button class="button success" name="login_submit" type="submit">Zou!</button>
+                </div>
             </form>
         </div>
     </header>

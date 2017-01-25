@@ -1,4 +1,5 @@
 <?php
+include "pdo2.php";
 
 if(isset($_POST['login_submit'])){
 
@@ -20,28 +21,35 @@ if(isset($_POST['login_submit'])){
 
 	if(empty($_POST['passwordid'])){
 		$errors[] = "entrer votre mdp";
-    echo "";
 	}
 
   else{
 		$password = $_POST['passwordid'];
-    echo $password;
 	}
 
 	if (count($errors == 0)) {
-		$sql = "SELECT ID_utilisateur FROM utilisateur WHERE pseudo = '$username'";
-		$result = $mysqli->query($sql);
-		if ($result->num_rows === 1) {
-			$row = $result->fetch_array(MYSQLI_ASSOC);
-			if (password_verify($password, $row['passwordid'])) {
-				//Password matches, so create the session
-				$_SESSION['user']['user_id'] = $row['user_id'];
-				// header("Location:/members");
-			}else{
-				$errors[] = "The username or password do not match";
-			}
-		}else{
-			$errors[] = "The username or password do not match";
-		}
+        $user = $_POST["identification"];
+
+        // QUERY DATABASE TO VERIFY LOGIN INFORMATION
+        $query_password = $dbh->prepare("SELECT password, pseudo FROM utilisateur WHERE pseudo = :user");
+        $query_password->execute(array(':user' => $user));
+        $password_row = $query_password->fetchAll();
+
+        // CHECK PASSWORD
+        $password = $_POST["passwordid"];
+        print_r($password);
+        $password_hash = $password_row[0]["password"];
+print_r($password_hash);
+        if(password_verify($password, $password_hash)){
+        //    $_SESSION['pseudo'] = $password_row[0]['user_session'];
+        //    require 'members.php';
+        print_r("pouet");
+        }
+        // RESPOND IF WRONG INFORMATION GIVEN
+        else{
+        //     $login_wrong = "The username and/or password you entered is incorrect. Please try again.";
+        //     require 'front_page.php';
+        print_r("lala");
+        }
 	}
 }
