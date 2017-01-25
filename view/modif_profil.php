@@ -18,19 +18,30 @@
                 <h2>Si tu veux modifier ton profil tu es au bon endroit petit Koala</h2>
             </div>
         </div>
-        <div class="row">
-            <form class="" action="index.html" method="post">
-                <div class="small-12 large-3 columns">
+        <form class="" action="../controller/php/requete_modif.php" method="post">
+            <div class="row">
+                <div class="small-12 large-3 large-offset-1 columns">
                     <img src="" alt="">
                     <button type="button" name="button">Modifier l'image de profil</button>
                 </div>
-                <div class="small-12 large-8 columns">
-                    <input type="text" name="" value="" placeholder="Votre pseudo" />
-                    <input type="text" name="" value="" placeholder="Votre Nom">
-                    <input type="text" name="" value="" placeholder="Votre Prenom">
-                    <input type="text" name="" value="" placeholder="Votre email">
+                <div class="small-12 large-5 large-offset-2 columns end">
+                    <input type="text" name="pseudo" value="" placeholder="Votre pseudo" />
+                    <input type="text" name="nom" value="" placeholder="Votre Nom">
+                    <input type="text" name="prenom" value="" placeholder="Votre Prenom">
+                    <input type="text" name="mail" value="" placeholder="Votre email">
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="row">
+                <div class="small-12" id="update_desc">
+                    <p>lalala<p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 large-2 large-centered columns">
+                    <button class="success button" name="modifier" type="submit">Modifier</button>
+                </div>
+            </div>
+        </form>
+
 
     </main>
