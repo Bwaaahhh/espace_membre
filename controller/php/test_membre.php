@@ -3,7 +3,7 @@
 	
 	if(isset($_POST["un_membre"])){
 		$member = $_POST["un_membre"];
-		$query = $dbh->query("SELECT utilisateur.pseudo FROM utilisateur WHERE pseudo LIKE '%$member%'");
+		$query = $dbh->query("SELECT utilisateur.pseudo, utilisateur.ID_utilisateur FROM utilisateur WHERE pseudo LIKE '%$member%'");
 		$result = $query->fetchAll();
 	}
 ?>
