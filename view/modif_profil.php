@@ -1,4 +1,4 @@
-<?php include 'controller/php/requete_modif.php'; ?>
+<?php include 'controller/php/requete_modif.php' ?>
 <body>
 	<header>
 		<div class="row">
@@ -19,33 +19,31 @@
                 <p class="titre_modif">Si tu veux modifier ton profil tu es au bon endroit petit Koala</p>
             </div>
         </div>
-        <form class="" name="modifier" action="" method="post">
-            <div class="row">
+        <div class="row">
                 <div class="small-12 large-3 large-offset-1 columns">
                     <img src="" alt="">
-					<form method="post" action="">
+								</div>
+					<form class=""  action="" method="post">
 						<input type="text" placeholder="url de la nouvelle image">
-						<input type="submit" name="button">
-					<form>
-                </div>
-                <div class="small-12 large-5 large-offset-2 columns end">
-                    <input type="text" name="pseudo" value="" placeholder="Votre pseudo" />
-                    <input type="text" name="nom" value="" placeholder="Votre Nom">
-                    <input type="text" name="prenom" value="" placeholder="Votre Prenom">
-                    <input type="text" name="mail" value="" placeholder="Votre email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="small-12" id="update_desc">
-                    <p>lalala<p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="small-4 large-2 large-centered columns">
-                    <button class="success button" type="submit">Modifier</button>
-                </div>
-            </div>
-        </form>
+
+	                <div class="small-12 large-5 large-offset-2 columns end">
+	                    <input type="text" name="pseudo" value="" placeholder="Votre pseudo" />
+	                    <input type="text" name="nom" value="" placeholder="Votre Nom">
+	                    <input type="text" name="prenom" value="" placeholder="Votre Prenom">
+	                    <input type="text" name="mail" value="" placeholder="Votre email">
+	                </div>
+        </div>
+	            <div class="row">
+	                <div class="small-12" id="update_desc">
+	                    <p>lalala<p>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="small-4 large-2 large-centered columns">
+	                    <button name="modifier" class="success button" type="submit">Modifier</button>
+	                </div>
+	            </div>
+        		</form>
 
 
     </main>
