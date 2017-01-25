@@ -1,4 +1,5 @@
 <?php
+session_start();
         $page = "index.php";
 
         define('WEBROOT', str_replace($page, 'view/template/', $_SERVER['SCRIPT_NAME']));

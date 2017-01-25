@@ -16,7 +16,6 @@ if(isset($_POST['login_submit'])){
 
   else{
 		$username = $_POST['identification'];
-    echo $username;
 	}
 
 	if(empty($_POST['passwordid'])){
@@ -37,13 +36,11 @@ if(isset($_POST['login_submit'])){
 
         // CHECK PASSWORD
         $password = $_POST["passwordid"];
-        print_r($password);
         $password_hash = $password_row[0]["password"];
-print_r($password_hash);
         if(password_verify($password, $password_hash)){
-        //    $_SESSION['pseudo'] = $password_row[0]['user_session'];
+            $_SESSION['user'] = $password_row[0]['pseudo'];
+            header("location: index.php?page=page_accueil");
         //    require 'members.php';
-        print_r("pouet");
         }
         // RESPOND IF WRONG INFORMATION GIVEN
         else{
