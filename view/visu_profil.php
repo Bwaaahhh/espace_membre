@@ -19,8 +19,11 @@
             <?php foreach ($res as $obj):?>
 
             <div class="small-12 large-2 columns">
-
-                <img src="<?=$obj->url_image?>" alt="Image représentant l'avatar du profil">
+                <?php if($obj->url_image == ""){ ?>
+                    <?php echo "Cet utilisateur n'a pas encore d'image de profil" ?>
+                <?php }else{ ?>
+                    <img src="<?=$obj->url_image?>" alt="Image représentant l'avatar du profil">
+                <?php } ?> 
             </div>
             <div class="small-12 large-4 large-offset-1 columns">
                 <label name="pseudo_profil">Pseudo : <?=$obj->pseudo?></label>
