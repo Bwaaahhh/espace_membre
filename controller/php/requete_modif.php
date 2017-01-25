@@ -18,4 +18,5 @@
           $result=$dbh->query("UPDATE utilisateur SET nom='$nom', prenom='$prenom', pseudo='$pseudo', mail='$mail' WHERE ID_utilisateur=1");
         }
       //}
+
  ?>
