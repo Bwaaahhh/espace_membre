@@ -1,11 +1,22 @@
+/*   -----------------------------      HEADER       --------------------------  */
+
 header {
     text-align: center ;
     background-color: #F05D3B ;
     padding-top: 2%;
 }
+header img {
+    margin-bottom: 10%;
+}
+
+
+/*  -------------------------------     MAIN   ------------------------------------  */
+
 main {
     background-color: #FA8654 ;
     padding-top: 4%;
+    font-family: Cabin ;
+    font-size : 1.25em ;
 }
 main form label input {
     display : inline-block;
@@ -17,6 +28,10 @@ main #subscribe {
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
+
+/*    -----------------------------    FOOTER        ------------------------------   */
+
 footer {
     background-color: #F05D3B ;
     padding-top: 4%;

@@ -3,7 +3,7 @@
 	<header>
 		<div class="row">
 			<div class="small-8 large-2 columns">
-				<img src="view/images/logo.png"/>
+				<img class="logo" src="view/images/logo.png"/>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
 				<h1>Velkroala</h1>
@@ -26,7 +26,7 @@
 		</div>
 		<div class="row">
 			<div class="small-10 large-5 columns">
-				<a href="php/modif_profil.php"><img alt="Gros bouton de modification de profil"/></a>
+				<a href="index.php?page=modif_profil"><img alt="Gros bouton de modification de profil"/></a>
 			</div>
 			<div class="small-8 large-4 columns">
 				<p>Rechercher un membre</p>
