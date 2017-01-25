@@ -31,6 +31,7 @@
 	                    <input type="text" name="nom" value="" placeholder="Votre Nom">
 	                    <input type="text" name="prenom" value="" placeholder="Votre Prenom">
 	                    <input type="text" name="mail" value="" placeholder="Votre email">
+											<input type="text" name="description" value="" placeholder="Votre description">
 	                </div>
         </div>
 	            <div class="row">
