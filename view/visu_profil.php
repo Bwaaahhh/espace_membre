@@ -39,7 +39,7 @@
 			<?php if(isset($_POST["un_membre"])){ ?>
 				<form name="member_find" action='visu_profil.php' method="post">
 					<?php foreach($result as $each){ ?>
-						<a href="index.php?page=visu_profil&pseudo=<?=$each['ID_utilisateur']?>"><?=$each['pseudo']?></a>
+						<a href="index.php?page=visu_profil&pseudo=<?=$each->ID_utilisateur?>"><?=$each->pseudo?></a>
 					<?php } ?>
 				</form>
 				<?php } ?>

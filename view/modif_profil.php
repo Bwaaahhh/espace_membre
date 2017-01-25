@@ -22,7 +22,10 @@
             <div class="row">
                 <div class="small-12 large-3 large-offset-1 columns">
                     <img src="" alt="">
-                    <button type="button" name="button">Modifier l'image de profil</button>
+					<form method="post" action="">
+						<input type="text" placeholder="url de la nouvelle image">
+						<input type="submit" name="button">
+					<form>
                 </div>
                 <div class="small-12 large-5 large-offset-2 columns end">
                     <input type="text" name="pseudo" value="" placeholder="Votre pseudo" />
