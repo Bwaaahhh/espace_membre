@@ -9,6 +9,13 @@ header img {
     margin-bottom: 10%;
 }
 
+.button.success {
+  background-color: #058505;
+}
+
+.button.success:hover {
+  background-color: #11a511;
+}
 
 /*  -------------------------------     MAIN   ------------------------------------  */
 

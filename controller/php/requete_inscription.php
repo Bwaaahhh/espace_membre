@@ -53,5 +53,5 @@ include 'PDO.php';
     die('compte crée');
   }
 
-debug($errors);
+
 }
