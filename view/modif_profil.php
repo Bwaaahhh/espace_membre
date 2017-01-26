@@ -3,13 +3,13 @@
 	<header>
 		<div class="row">
 			<div class="small-8 large-2 columns">
-				<a href="index.php?page=page_accueil"><img src="view/images/logo.png" alt="une tete de koala qui est le logo du site" /></a>
+				<a  class="aajax" href="index.php?page=page_accueil"><img src="view/images/logo.png" alt="une tete de koala qui est le logo du site" /></a>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
 				<h1>Velkroala</h1>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
-				<a href="index.php?page=visu_profil"><p>Bonjour <?= $_SESSION['user'] ?></p></a>
+				<a  class="aajax" href="index.php?page=visu_profil"><p>Bonjour <?= $_SESSION['user'] ?></p></a>
 			</div>
 		</div>
 	</header>
@@ -31,7 +31,7 @@
 	                    <input type="text" name="nom" value="" placeholder="Votre Nom">
 	                    <input type="text" name="prenom" value="" placeholder="Votre Prenom">
 	                    <input type="text" name="mail" value="" placeholder="Votre email">
-											<input type="text" name="description" value="" placeholder="Votre description">
+						<input type="text" name="description" value="" placeholder="Votre description">
 	                </div>
         </div>
 	            <div class="row">

@@ -6,7 +6,7 @@
 	<header>
 		<div class="row">
 			<div class="small-8 large-2 columns">
-				<a href="index.php?page=page_accueil"><img src="view/images/logo.png" alt="une tete de koala qui est le logo du site" /></a>
+				<a  class="aajax" href="index.php?page=page_accueil"><img src="view/images/logo.png" alt="une tete de koala qui est le logo du site" /></a>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
 				<h1>Velkroala</h1>
@@ -41,7 +41,7 @@
 			<?php if(isset($_POST["un_membre"])){ ?>
 				<form name="member_find" action='visu_profil.php' method="post">
 					<?php foreach($result as $each){ ?>
-						<a href="index.php?page=visu_profil&pseudo=<?=$each->ID_utilisateur?>"><?=$each->pseudo?></a>
+						<a class="aajax" href="index.php?page=visu_profil&pseudo=<?=$each->ID_utilisateur?>"><?=$each->pseudo?></a>
 					<?php } ?>
 				</form>
 				<?php } ?>

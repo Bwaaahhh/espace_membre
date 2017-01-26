@@ -9,7 +9,7 @@
 				<h1>Velkroala</h1>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
-				<a href="index.php?page=visu_profil&pseudo=<?= $_SESSION['id_user']?>"><p>Bonjour <?= $_SESSION['user'] ?></p></a>
+				<a class="aajax" href="index.php?page=visu_profil&pseudo=<?= $_SESSION['id_user']?>"><p>Bonjour <?= $_SESSION['user'] ?></p></a>
 			</div>
 		</div>
 	</header>
@@ -26,7 +26,7 @@
 		</div>
 		<div class="row">
 			<div class="small-10 large-5 columns">
-				<a href="index.php?page=modif_profil"><img alt="Gros bouton de modification de profil"/></a>
+				<a class="aajax" href="index.php?page=modif_profil"><img alt="Gros bouton de modification de profil"/></a>
 			</div>
 			<div class="small-8 large-4 columns">
 				<p>Rechercher un membre</p>
@@ -37,7 +37,7 @@
 				<?php if(isset($_POST["un_membre"])){ ?>
 				<form name="member_find" action='visu_profil.php' method="post">
 					<?php foreach($result as $each){ ?>
-						<a href="index.php?page=visu_profil&pseudo=<?=$each->ID_utilisateur?>"><?=$each->pseudo?></a>
+						<a  class="aajax" href="index.php?page=visu_profil&pseudo=<?=$each->ID_utilisateur?>"><?=$each->pseudo?></a>
 					<?php } ?>
 				</form>
 				<?php } ?>

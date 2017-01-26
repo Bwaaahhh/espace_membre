@@ -1,9 +1,13 @@
 <?php
-session_start();
-        $page = "index.php";
 
-        define('WEBROOT', str_replace($page, 'view/template/', $_SERVER['SCRIPT_NAME']));
-    	require_once("controller/php/PDO.php");
+session_start();
+
+$page = "index.php";
+define('WEBROOT', str_replace($page, 'view/template/', $_SERVER['SCRIPT_NAME']));
+require_once("controller/php/PDO.php");
+
+if(isset($_SESSION['user'])){
+
 
         if (isset($_GET['page'])) {
 		    $page = "view/".$_GET['page'].".php";
@@ -19,9 +23,13 @@ session_start();
     	// 	if ($page == "view/article.php") {
     	// 		require_once("controller/get_article.php");
     	// 	}
-
     		include("view/template/index.php");
     	// }
     	// else {
     	// 	echo("page non trouvée");
     	// }
+}
+else{
+$page = "view/index.php";
+    include("view/template/index.php");
+}

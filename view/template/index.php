@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="contenu">
     <head>
         <meta charset="utf-8">
         <title>Velkroala</title>

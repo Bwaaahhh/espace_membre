@@ -41,7 +41,6 @@ if(isset($_POST['login_submit'])){
             $_SESSION['user'] = $password_row[0]['pseudo'];
             $_SESSION['id_user'] = $password_row[0]['ID_utilisateur'];
             header("location: index.php?page=page_accueil");
-        //    require 'members.php';
         }
         // RESPOND IF WRONG INFORMATION GIVEN
         else{
