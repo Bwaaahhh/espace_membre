@@ -29,7 +29,22 @@ main #subscribe {
     padding-bottom: 4%;
 }
 main .titre_modif {
-    font-weight: bold ; 
+    font-weight: bold ;
+}
+main .popup_com {
+    z-index: 999 ;
+    background-color: white ;
+    max-width: 1170px;
+    color : black ;
+    height: auto;
+    position : absolute;
+    margin-left: -200% ;
+    transition: 1s ;
+}
+main .active {
+    transition: 1s ;
+    margin-left:200px ;
+    top : 500px ;
 }
 
 

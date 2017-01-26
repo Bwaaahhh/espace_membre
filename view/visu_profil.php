@@ -1,5 +1,6 @@
 <?php include "controller/php/test_membre.php" ;
-      include "controller/php/requete_affichage.php" ?>
+      include "controller/php/requete_affichage.php" ;
+      include "controller/php/requete_ajout_com.php"; ?>
 <body>
 	<header>
 		<div class="row">
@@ -10,7 +11,7 @@
 				<h1>Velkroala</h1>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
-				<p>Bonjour ...</p>
+				<p>Bonjour <?= $_SESSION['user'] ?></p>
 			</div>
 		</div>
 	</header>
@@ -54,7 +55,14 @@
         <?php endforeach;?>
         <div class="row">
             <div class="small-3 columns end">
-                <button>Ajouter un commentaire</button>
+                <button onclick="popup()">Ajouter un commentaire</button>
+            </div>
+            <div class="small-6 popup_com">
+                <form name="add_com" action="" method="post">
+                    <input type="text" name="un_com"  value="" placeholder="Taper ici votre commentaire"/>
+                    <button onclick="cacher()">Annuler</button>
+                    <button type="submit" onclick="valider()">Valider</button>
+                </form>
             </div>
         </div>
         <div class="row">
