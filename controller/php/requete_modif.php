@@ -1,7 +1,6 @@
 <?php include 'PDO.php';                                 //--------------Modif profil------------------//
 
 
-
     // if(isset($_GET['ID_utilisateur']))
     //{
       //$ID_utilisateur = (int)$_GET['ID_utilisateur'];
@@ -14,7 +13,7 @@
           $prenom = ($_POST['prenom']);
           $mail = ($_POST['mail']);
           $description = ($_POST['description']);
-
+          $image = ($_POST['img']);
           if($nom != "")
           {
             $result=$dbh->query("UPDATE utilisateur SET nom='$nom' WHERE ID_utilisateur= ".$_SESSION['id_user']." ");
@@ -38,6 +37,11 @@
           if($description != "")
           {
             $result=$dbh->query("UPDATE utilisateur SET description='$description' WHERE ID_utilisateur = ".$_SESSION['id_user']." ");
+
+          }
+          if($image != "")
+          {
+               $result=$dbh->query("UPDATE utilisateur SET url_image='$image' WHERE ID_utilisateur = ".$_SESSION['id_user']." ");
 
           }
 

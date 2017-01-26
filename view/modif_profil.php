@@ -1,10 +1,10 @@
-<?php include "controller/php/requete_image.php" ?>
+
 <?php include 'controller/php/requete_modif.php' ?>
 <body>
 	<header>
 		<div class="row">
 			<div class="small-8 large-2 columns">
-				<img src="view/images/logo.png"/>
+				<a  class="aajax" href="index.php?page=page_accueil"><img src="view/images/logo.png" alt="une tete de koala qui est le logo du site" /></a>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
 				<h1>Velkroala</h1>
@@ -15,16 +15,16 @@
 		</div>
 	</header>
 	<main>
-		<form method="post" action="">
-			<div class="row">
-				<div class="small-12 small-centered columns">
-					<h2>Si tu veux modifier ton profil, tu es au bon endroit petit Koala.</h2>
-				</div>
+		<div class="row">
+			<div class="small-12 small-centered columns">
+				<h2>Si tu veux modifier ton profil, tu es au bon endroit petit Koala.</h2>
 			</div>
+		</div>
+		<form method="post" action="">
 			<div class="row">
 				<div class="small-12 large-3 large-offset-1 columns">
 					<img src="" alt="">
-					<input name="img" type="text" placeholder="url de la nouvelle image">
+					<input name="img" type="text" value="" placeholder="url de la nouvelle image">
 				</div>
 				<div class="small-12 large-5 large-offset-2 columns end">
 					<input type="text" name="pseudo" value="" placeholder="Votre pseudo" />
