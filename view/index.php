@@ -12,6 +12,10 @@
                     <input type="text" name="identification" placeholder="Identifiant"/>
                     <input type="password" name="passwordid" placeholder="Mot de passe"  />
                     <button class="button success" name="login_submit" type="submit">Zou!</button>
+                    <?php if($bad == ""){  ?>
+                  <?php   }else{  ?>
+                  <?= $bad; ?>
+                  <?php } ?>
                 </div>
             </form>
         </div>
