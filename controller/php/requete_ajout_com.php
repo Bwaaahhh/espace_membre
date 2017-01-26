@@ -4,6 +4,7 @@ if(isset($_POST["un_com"])){
     $query2 = $dbh->query("SELECT ID_utilisateur FROM utilisateur WHERE utilisateur.ID_utilisateur = '$profil'");
     $res2 = $query2->fetchAll(PDO::FETCH_OBJ);
 
+
     foreach ($res2 as $obj){
         $id = $obj->ID_utilisateur ;
     }

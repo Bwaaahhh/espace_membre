@@ -1,6 +1,7 @@
 <?php include "controller/php/test_membre.php" ;
       include "controller/php/requete_affichage.php" ;
-      include "controller/php/requete_ajout_com.php"; ?>
+      include "controller/php/requete_ajout_com.php";
+      include "controller/php/requete_visu_com.php"; ?>
 <body>
 	<header>
 		<div class="row">
@@ -68,9 +69,11 @@
         <div class="row">
             <div class="small-12">
 
-
+                <?php foreach ($res3 as $obj3):?>
+                    <label name="auteur_com">Auteur du com : <?=$obj3->auteur?></label>
+                    <label name="contenu_com"><?=$obj3->contenu?> </label>
                 <!-- GENERATION DES COMMENTAIRES VIA PHP -->
-
+                <?php endforeach;?>
 
             </div>
         </div>
