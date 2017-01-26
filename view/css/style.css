@@ -1,4 +1,4 @@
-/*   --------------------------------      HEADER       --------------------------  */
+/   ----------------------------------      HEADER       --------------------------  /
 
 header {
     text-align: center ;
@@ -10,7 +10,7 @@ header img {
 }
 
 
-/*  -------------------------------     MAIN   ------------------------------------  */
+/  -------------------------------     MAIN   ------------------------------------  /
 
 main {
     background-color: #FA8654 ;
@@ -29,7 +29,32 @@ main #subscribe {
     padding-bottom: 4%;
 }
 main .titre_modif {
-    font-weight: bold ; 
+    font-weight: bold ;
+}
+main .popup_com {
+    z-index: 999 ;
+    background-color: white ;
+    max-width: 1170px;
+    color : black ;
+    height: auto;
+    position : absolute;
+    margin-left: -200% ;
+    transition: 1s ;
+}
+main .active {
+    transition: 1s ;
+    margin-left:200px ;
+    top : 500px ;
+}
+
+a
+{
+  color: #000000;
+}
+
+a:hover
+{
+  color: #4C341C;
 }
 
 #dropfile{
@@ -41,7 +66,7 @@ background-color: white;
 margin-bottom: 2em;
 }
 
-/*    -----------------------------    FOOTER        ------------------------------   */
+/    -----------------------------    FOOTER        ------------------------------   /
 
 footer {
     background-color: #F05D3B ;
