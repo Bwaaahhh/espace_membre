@@ -26,7 +26,7 @@
 		</div>
 		<div class="row">
 			<div class="small-10 large-5 columns">
-				<button class="button success" href="index.php?page=modif_profil"><img alt="Gros bouton de modification de profil"/></button>
+				<a class="aajax" href="index.php?page=modif_profil"><img alt="Gros bouton de modification de profil"/></a>
 			</div>
 			<div class="small-8 large-4 columns">
 				<p>Rechercher un membre</p>
