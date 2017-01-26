@@ -22,11 +22,7 @@
 		</div>
 		<form method="post" action="">
 			<div class="row">
-				<div class="small-12 large-3 large-offset-1 columns">
-					<img src="" alt="">
-					<input name="img" type="text" value="" placeholder="url de la nouvelle image">
-				</div>
-				<div class="small-12 large-5 large-offset-2 columns end">
+				<div class="small-12 large-5 large-offset-3 columns end">
 					<input type="text" name="pseudo" value="" placeholder="Votre pseudo" />
 					<input type="text" name="nom" value="" placeholder="Votre Nom">
 					<input type="text" name="prenom" value="" placeholder="Votre Prenom">
