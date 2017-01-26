@@ -3,7 +3,7 @@
 	<header>
 		<div class="row">
 			<div class="small-8 large-2 columns">
-				<img src="view/images/logo.png"/>
+				<a href="index.php?page=page_accueil"><img src="view/images/logo.png" alt="une tete de koala qui est le logo du site" /></a>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
 				<h1>Velkroala</h1>
