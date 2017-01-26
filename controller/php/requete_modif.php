@@ -5,7 +5,7 @@
     // if(isset($_GET['ID_utilisateur']))
     //{
       //$ID_utilisateur = (int)$_GET['ID_utilisateur'];
-      $result=$dbh->query("SELECT * FROM utilisateur WHERE ID_utilisateur= 1");
+      $result=$dbh->query("SELECT * FROM utilisateur WHERE ID_utilisateur= '".$_SESSION['id_user']."' ");
 
         if (isset($_POST['modifier']))
         {
