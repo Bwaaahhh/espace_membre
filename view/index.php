@@ -4,7 +4,7 @@
         <div class="row">
             <img class="small-3 small-offset-4 large-2 large-offset-0 column" src="view/images/logo.png" alt="une tete de koala qui est le logo du site" />
             <div class="small-12 large-3 large-offset-2 column">
-                <h1>Velkroala :</h1>
+                <h1>Velkroala</h1>
                 <p>Vous ne pourrez jamais en décrocher</p>
             </div>
             <form class="" action="" method="post">

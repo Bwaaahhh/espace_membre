@@ -56,7 +56,7 @@
         <?php endforeach;?>
         <div class="row">
             <div class="small-3 columns end">
-                <button onclick="popup()">Ajouter un commentaire</button>
+                <button id="add_com2" onclick="popup()">Ajouter un commentaire</button>
             </div>
             <div class="small-6 popup_com">
                 <form name="add_com" action="" method="post">
