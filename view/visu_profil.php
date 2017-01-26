@@ -61,7 +61,7 @@
             <div class="small-6 popup_com">
                 <form name="add_com" action="" method="post">
                     <input type="text" name="un_com"  value="" placeholder="Taper ici votre commentaire"/>
-                    <button onclick="cacher()">Annuler</button>
+                    <button type="button" onclick="cacher()">Annuler</button>
                     <button type="submit" onclick="valider()">Valider</button>
                 </form>
             </div>

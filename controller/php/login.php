@@ -1,6 +1,6 @@
 <?php
 include "pdo2.php";
-
+$bad = "";
 if(isset($_POST['login_submit'])){
 
   include "functions.php";
@@ -19,7 +19,8 @@ if(isset($_POST['login_submit'])){
 	}
 
 	if(empty($_POST['passwordid'])){
-		$errors[] = "entrer votre mdp";
+    $errors[] = "entrer votre mdp";
+    echo "entrer un mot de passe";
 	}
 
   else{
@@ -41,12 +42,13 @@ if(isset($_POST['login_submit'])){
             $_SESSION['user'] = $password_row[0]['pseudo'];
             $_SESSION['id_user'] = $password_row[0]['ID_utilisateur'];
             header("location: index.php?page=page_accueil");
+        //    require 'members.php';
         }
         // RESPOND IF WRONG INFORMATION GIVEN
         else{
         //     $login_wrong = "The username and/or password you entered is incorrect. Please try again.";
         //     require 'front_page.php';
-        print_r("lala");
+        $bad = "<p>mauvais mot de passe ou identifiant recommence avant que ton compte soit supprimé à vie et on interdira l'accès à ton e-mail <p>";
         }
 	}
 }
