@@ -9,7 +9,7 @@
 				<h1>Velkroala</h1>
 			</div>
 			<div class="small-8 large-2 large-offset-3 columns">
-				<p>Bonjour <?= $_SESSION['user'] ?></p>
+				<a href="index.php?page=visu_profil&pseudo=<?= $_SESSION['id_user']?>"><p>Bonjour <?= $_SESSION['user'] ?></p></a>
 			</div>
 		</div>
 	</header>
