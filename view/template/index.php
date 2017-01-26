@@ -20,9 +20,9 @@
 
     <footer>
         <div class="row">
-            <i class="fa fa-facebook-official fa-3x small-2 small-offset-3 " aria-hidden="true"></i>
-            <i class="fa fa-twitter fa-3x small-2 small-offset-1" aria-hidden="true"></i>
-            <i class="fa fa-github fa-3x small-2 small-offset-1" aria-hidden="true"></i>
+            <a href="https://fr-fr.facebook.com"><i class="fa fa-facebook-official fa-3x small-2 small-offset-3 " aria-hidden="true"></i></a>
+            <a href="https://twitter.com/?lang=fr"><i class="fa fa-twitter fa-3x small-2 small-offset-1" aria-hidden="true"></i></a>
+            <a href="https://github.com"><i class="fa fa-github fa-3x small-2 small-offset-1" aria-hidden="true"></i></a>
         </div>
     </footer>
 
