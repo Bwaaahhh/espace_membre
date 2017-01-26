@@ -5,13 +5,12 @@ if(isset($_POST['login_submit'])){
 
   include "functions.php";
 
-	$errors = array();
+	$errors = false ;
 
 
 	//Basic validation
 	if(empty($_POST['identification'])){
-		$errors[] = "entrer un pseudo";
-    echo "entrer un pseudo";
+		$errors = true ;
 	}
 
   else{
@@ -19,15 +18,14 @@ if(isset($_POST['login_submit'])){
 	}
 
 	if(empty($_POST['passwordid'])){
-    $errors[] = "entrer votre mdp";
-    echo "entrer un mot de passe";
+        $errors = true ;
 	}
 
   else{
 		$password = $_POST['passwordid'];
 	}
 
-	if (count($errors == 0)) {
+	if ($errors == false) {
         $user = $_POST["identification"];
 
         // QUERY DATABASE TO VERIFY LOGIN INFORMATION
