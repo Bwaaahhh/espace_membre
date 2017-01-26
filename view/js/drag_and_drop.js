@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 		// Only process image files.
 		if (!f.type.match(('image/jpeg') || ('image/png') || ('image/svg'))) {
-		   alert(‘The file must be a jpeg image’) ;
+		   alert(‘The file must be a jpeg/png/svg image’) ;
 		   return false ;
 		}
 		var reader = new FileReader();
