@@ -1,2 +1,3 @@
 # espace_membre
-Projet qui gère l'espace membre
+Exercice de la formation
+Création d'un espace membre
